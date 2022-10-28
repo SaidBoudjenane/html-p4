@@ -6,13 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <img id="header-image" src="assets/img/header-image.png" alt="Paysage avec un chameau">
-        <h1 id="page-title">Voyage & Co</h1>
+        <div id="header-top">
+            <div id="navbar">
+                <div class="navbar-item">
+                    <a href="#" title="Accueil">Accueil</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="#" title="Destinations">Destinations</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="#" title="Réservations">Réservations</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="#" title="Contact">Contact</a>
+                </div>
+            </div>
+            <div id="search">
+                <input id="search-bar" type="text" title="Barre de recherche" name="search" placeholder="Rechercher...">
+                <button id="search-button">
+                    <span id="search-icon" title="Rechercher" class="material-symbols-outlined">Search</span>
+                </button>
+            </div>
+        </div>
+        <div id="header-image">
+            <img src="assets/img/header-image.png" alt="Bannière du site">
+            <h1 id="page-title">Voyage & Co</h1>
+        </div>
     </header>
 </body>
 
