@@ -8,6 +8,14 @@ body {
     gap: 3vh;
 }
 
+footer {
+    color: white;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #3CA2C3;
+}
+
 /* Header */
 
 header {
@@ -89,8 +97,8 @@ header {
 /* - Image */
 
 #header-image > img {
-    width: 100vw;
-    filter: blur(1px) saturate(1.5);
+    width: 100%;
+    filter: saturate(1.5);
     height: 30vh;
     object-fit: cover;
     object-position: 0 40%;
@@ -115,6 +123,8 @@ header {
     background-color: #3CA2C3;
 }
 
+/* Présentation */
+
 #presentation {
     width: 80vw;
 }
@@ -137,4 +147,44 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Articles / Blocs */
+
+#articles {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    gap: 2.5vw;
+    justify-content: space-between;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+.art-image {
+    width: 25vw;
+    vertical-align: middle;
+}
+
+.art-title {
+    vertical-align: middle;
+    text-align: center;
+    padding: 4%;
+    margin: 0;
+    background-color: #348aa7;
+    color: white;
+}
+
+.art-body {
+    display: flex;
+    flex: 1 1;
+    background-color: #3697b8;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    margin-top: auto;
+    align-self: flex-start;
 }
