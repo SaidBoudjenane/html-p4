@@ -6,6 +6,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #b0dae8;
     gap: 3vh;
+    overflow-x: hidden;
 }
 
 footer {
@@ -21,6 +22,7 @@ footer {
 header {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 /* - Top */
@@ -194,10 +196,6 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    /* h1 dans le header
-    menu hamburger à droite
-    articles alignés verticalement
-    adapter width body footer blocs */
 
     #navbar {
         display: none;
@@ -207,7 +205,7 @@ header {
         height: 7vh;
         flex-direction: row-reverse;
         justify-content: space-between;
-        padding: 0 7px;
+        padding: 0 8px;
     }
 
     #header-image > img {
@@ -229,7 +227,7 @@ header {
     #burger-menu {
         display: block;
         color: white;
-        font-size: 37px;
+        font-size: 5.8vh;
     }
 
     #articles {
