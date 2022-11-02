@@ -33,6 +33,10 @@ header {
     justify-content: space-evenly;
 }
 
+#burger-menu {
+    display: none;
+}
+
 #navbar, #search {
     display: flex;
     flex-direction: row;
@@ -101,7 +105,7 @@ header {
     filter: saturate(1.5);
     height: 30vh;
     object-fit: cover;
-    object-position: 0 40%;
+    object-position: center 40%;
     vertical-align: middle;
 }
 
@@ -111,7 +115,7 @@ header {
     line-height: 10vh;
     font-size: 5vh;
     top: 19vh;
-    width: 67%;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -126,7 +130,7 @@ header {
 /* Présentation */
 
 #presentation {
-    width: 80vw;
+    width: 90vw;
 }
 
 #pres-title {
@@ -154,8 +158,8 @@ header {
 #articles {
     display: flex;
     flex-direction: row;
-    width: 80vw;
-    gap: 2.5vw;
+    width: 90vw;
+    gap: 3vw;
     justify-content: space-between;
 }
 
@@ -165,7 +169,7 @@ header {
 }
 
 .art-image {
-    width: 25vw;
+    width: 28vw;
     vertical-align: middle;
 }
 
@@ -187,4 +191,65 @@ header {
     padding: 5%;
     margin-top: auto;
     align-self: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    /* h1 dans le header
+    menu hamburger à droite
+    articles alignés verticalement
+    adapter width body footer blocs */
+
+    #navbar {
+        display: none;
+    }
+
+    #header-top {
+        height: 7vh;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 7px;
+    }
+
+    #header-image > img {
+        height: 20vh;
+    }
+
+    #page-title {
+        font-size: 2em;
+        top: 12vh;
+    }
+
+    #search {
+        display: flex;
+        flex-direction: row;
+        height: 7vh;
+        align-items: center;
+    }
+
+    #burger-menu {
+        display: block;
+        color: white;
+        font-size: 37px;
+    }
+
+    #articles {
+        flex-direction: column;
+    }
+
+    .art-title, .art-body, #pres-title {
+        padding: 2%;
+    }
+
+    .art-image {
+        width: 90vw;
+    }
+
+    #header-image > img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #pres-body {
+        padding: 0 3%;
+    }
 }
