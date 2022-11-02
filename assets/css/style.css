@@ -5,8 +5,9 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #b0dae8;
-    gap: 3vh;
-    overflow-x: hidden;
+    gap: 3%;
+    width: 100%;
+    height: 100vh;
 }
 
 footer {
@@ -23,16 +24,20 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
 }
 
 /* - Top */
 
 #header-top {
-    height: 10vh;
+    height: 100%;
     background-color: #3CA2C3;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    padding-right: 10px;
+    padding-left: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #burger-menu {
@@ -42,12 +47,12 @@ header {
 #navbar, #search {
     display: flex;
     flex-direction: row;
-    height: 10vh;
+    height: 100%;
     align-items: center;
 }
 
 .navbar-item {
-    padding: 3.7vh;
+    padding: 8%;
 }
 
 .navbar-item:hover {
@@ -105,7 +110,7 @@ header {
 #header-image > img {
     width: 100%;
     filter: saturate(1.5);
-    height: 30vh;
+    height: 215px;
     object-fit: cover;
     object-position: center 40%;
     vertical-align: middle;
@@ -114,9 +119,9 @@ header {
 #page-title {
     position: absolute;
     text-align: center;
-    line-height: 10vh;
-    font-size: 5vh;
-    top: 19vh;
+    line-height: 215px;
+    font-size: 30px;
+    top: 70px;
     width: 80vw;
     margin: 0 auto;
 }
@@ -124,7 +129,7 @@ header {
 /* Séparateur */
 
 .separation {
-    height: 3vh;
+    height: 5%;
     width: 100%;
     background-color: #3CA2C3;
 }
@@ -132,7 +137,8 @@ header {
 /* Présentation */
 
 #presentation {
-    width: 90vw;
+    width: 90%;
+    height: 100%;
 }
 
 #pres-title {
@@ -141,7 +147,7 @@ header {
     color: white;
     font-weight: 600;
     background-color: #348aa7;
-    height: 3vh;
+    height: 4%;
     padding: 1.3%;
     vertical-align: middle;
 }
@@ -160,8 +166,8 @@ header {
 #articles {
     display: flex;
     flex-direction: row;
-    width: 90vw;
-    gap: 3vw;
+    width: 90%;
+    gap: 3%;
     justify-content: space-between;
 }
 
@@ -171,7 +177,7 @@ header {
 }
 
 .art-image {
-    width: 28vw;
+    width: 100%;
     vertical-align: middle;
 }
 
@@ -202,44 +208,40 @@ header {
     }
 
     #header-top {
-        height: 7vh;
+        height: 100%;
         flex-direction: row-reverse;
         justify-content: space-between;
-        padding: 0 8px;
     }
 
     #header-image > img {
-        height: 20vh;
+        height: 130px;
     }
 
     #page-title {
-        font-size: 2em;
-        top: 12vh;
+        font-size: 30px;
+        top: 20px;
     }
 
     #search {
         display: flex;
         flex-direction: row;
-        height: 7vh;
+        height: 100%;
         align-items: center;
     }
 
     #burger-menu {
         display: block;
         color: white;
-        font-size: 5.8vh;
+        font-size: 45px;
     }
 
     #articles {
         flex-direction: column;
+        gap: 40px;
     }
 
     .art-title, .art-body, #pres-title {
         padding: 2%;
-    }
-
-    .art-image {
-        width: 90vw;
     }
 
     #header-image > img {
