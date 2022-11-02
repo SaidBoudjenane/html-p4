@@ -32,7 +32,7 @@ header {
 }
 
 .navbar-item {
-    padding: 3.6vh;
+    padding: 3.7vh;
 }
 
 .navbar-item:hover {
@@ -52,6 +52,14 @@ header {
     width: 24px;
     color: white;
     padding: 16px;
+}
+
+#search-button:hover {
+    background-color: #28677b;
+}
+
+#search-button:focus {
+    background-color: #1f4f5e;
 }
 
 #search-icon {
@@ -81,11 +89,11 @@ header {
 
 #header-image > img {
     width: 100vw;
-    filter: blur(1px);
-    filter: saturate(1.5);
+    filter: blur(1px) saturate(1.5);
     height: 30vh;
     object-fit: cover;
     object-position: 0 40%;
+    vertical-align: middle;
 }
 
 #page-title {
@@ -93,8 +101,15 @@ header {
     text-align: center;
     line-height: 10vh;
     font-size: 5vh;
-    top: 18vh;
+    top: 19vh;
     width: 67%;
     margin: 0 auto;
 }
 
+/* Séparateur */
+
+.separation {
+    height: 3vh;
+    width: 100%;
+    background-color: #3CA2C3;
+}
